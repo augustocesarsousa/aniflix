@@ -14,6 +14,7 @@
 body{
     background-color: var(--gray-100);
     font-family: Verdana, Tahoma, sans-serif;
+    color: var(--white);
 }
 
 header .logo{
@@ -38,4 +39,66 @@ header .container{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.btn{
+    border: none;
+    cursor: pointer;
+    font-size: 10.5px;
+    border: solid 2px var(--yellow);
+    margin-right: 15px;
+    text-transform: uppercase;
+    transition: .3s ease all;
+}
+
+.btn:hover{
+    background-color: var(--gray-100);
+    border-color: var(--gray-100);
+}
+
+.btn-circle{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--yellow);
+}
+
+.btn-square{
+    width: 100px;
+    height: 40px;
+    color: var(--gray-25);
+    border-radius: 50px;
+    background-color: transparent;
+}
+
+.container{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.banner{
+    font-size: 16px;
+    height: 400px;
+    background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),url('../img/banner-Attack-on-Titan.jpg');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.banner .title{
+    margin-top: 10%;
+    font-size: 30px;
+}
+
+.banner .description{
+    text-align: justify;
+    margin-top: 10px;
+    width: 75%;
+}
+
+.banner .buttons{
+    margin-top: 20px;
+    margin-left: 20px;
 }
