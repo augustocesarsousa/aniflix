@@ -1,23 +1,23 @@
-:root{
+:root {
     --gray-25: #ccc;
-    --gray-100: #555;
+    --gray-100: #333;
     --white: #fff;
-    --yellow:#ff0;
+    --yellow: #ff0;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     background-color: var(--gray-100);
     font-family: Verdana, Tahoma, sans-serif;
     color: var(--white);
 }
 
-header .logo{
+header .logo {
     text-transform: uppercase;
     color: var(--yellow);
     font-family: 'Arial Black', sans-serif;
@@ -25,23 +25,42 @@ header .logo{
     margin-left: 10px;
 }
 
-header nav a{
+header nav {
+    display: flex;
+    align-items: center;
+}
+
+header nav a {
     text-decoration: none;
     color: var(--gray-25);
     margin-right: 10px;
+    transition: .3s ease all;
 }
 
-header nav a:hover{
-    color: var(--white);
+header nav a:hover {
+    color: var(--yellow);
 }
 
-header .container{
+header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.btn{
+header .avatar img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    margin-left: 20px;
+    border: solid 2px transparent;
+    transition: .3s ease all;
+}
+
+header .avatar img:hover {
+    border: solid 2px var(--yellow);
+}
+
+.btn {
     border: none;
     cursor: pointer;
     font-size: 10.5px;
@@ -51,19 +70,26 @@ header .container{
     transition: .3s ease all;
 }
 
-.btn:hover{
+.btn:hover {
     background-color: var(--gray-100);
+    color: var(--gray-25);
     border-color: var(--gray-100);
 }
 
-.btn-circle{
+.btn-circle {
     width: 50px;
     height: 50px;
     border-radius: 50%;
+    color: var(--gray-100);
     background-color: var(--yellow);
 }
 
-.btn-square{
+.btn-circle svg {
+    margin-left: 3px;
+    font-size: 16px;
+}
+
+.btn-square {
     width: 100px;
     height: 40px;
     color: var(--gray-25);
@@ -71,15 +97,15 @@ header .container{
     background-color: transparent;
 }
 
-.container{
+.container {
     margin-left: 20px;
     margin-right: 20px;
 }
 
-.banner{
-    font-size: 16px;
+.banner {
+    font-size: 14px;
     height: 400px;
-    background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),url('../img/banner-Attack-on-Titan.jpg');
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url('../img/banner-Attack-on-Titan.jpg');
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -87,18 +113,23 @@ header .container{
     align-items: flex-start;
 }
 
-.banner .title{
-    margin-top: 10%;
+.banner .title {
+    margin-top: 5%;
     font-size: 30px;
 }
 
-.banner .description{
+.banner .season {
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+.banner .description {
     text-align: justify;
     margin-top: 10px;
     width: 75%;
 }
 
-.banner .buttons{
+.banner .buttons {
     margin-top: 20px;
     margin-left: 20px;
 }
