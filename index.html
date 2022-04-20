@@ -27,14 +27,23 @@
 <body>
     <header>
         <div class="container">
-            <h2 class="logo">Aniflix</h2>
-            <nav>
-                <a href="#">Início</a>
-                <a href="#">Ação</a>
-                <a href="#">Drama</a>
-                <a href="#">Romance</a>
-                <a href="#">Terror</a>
-                <a href="#" class="avatar"><img src="img/avatar-saitama.jpg" alt="avatar do usuário" title="Configurações"></a>
+            <nav class="navbar">
+                <h2 class="nav-logo"><a href="#">ANIFLIX</a></h2>
+                <div class="nav-menu-content">
+                    <ul class="nav-menu">
+                        <li class="nav-item"><a href="#" class="nav-link">Início</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Categorias</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Pesquisar</a></li>
+                    </ul>
+                    <div class="nav-avatar">
+                        <a href="#" class="avatar"><img src="img/avatar-saitama.jpg" alt="avatar do usuário" title="Configurações"></a>
+                    </div>
+                </div>
+                <div class="nav-hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>                
             </nav>
         </div>
     </header>
@@ -68,6 +77,10 @@
             </div>
         </session>
     </main>
+
+    <!--menu js-->
+
+    <script src="js/menu.js"></script>
 
     <!--font awesome js-->
 

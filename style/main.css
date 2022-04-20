@@ -11,43 +11,56 @@
     box-sizing: border-box;
 }
 
+li {
+    list-style: none;
+}
+
 body {
     background-color: var(--gray-100);
     font-family: Verdana, Tahoma, sans-serif;
     color: var(--white);
 }
 
-header .logo {
-    text-transform: uppercase;
-    color: var(--yellow);
-    font-family: 'Arial Black', sans-serif;
-    font-size: 40px;
-    margin-left: 10px;
-}
-
-header nav {
-    display: flex;
-    align-items: center;
-}
-
-header nav a {
-    text-decoration: none;
-    color: var(--gray-25);
-    margin-right: 10px;
-    transition: .3s ease all;
-}
-
-header nav a:hover {
-    color: var(--yellow);
-}
-
-header .container {
+.navbar {
+    min-height: 70px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-header .avatar img {
+.navbar a {
+    text-decoration: none;
+}
+
+.nav-logo {
+    text-transform: uppercase;
+    font-family: 'Arial Black', sans-serif;
+    font-size: 40px;
+    margin-left: 10px;
+}
+
+.nav-logo a {
+    color: var(--yellow);
+}
+
+.nav-menu-content,
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav-link {
+    color: var(--gray-25);
+    transition: .3s ease all;
+}
+
+.nav-link:hover {
+    color: var(--yellow);
+}
+
+.avatar img {
     width: 45px;
     height: 45px;
     border-radius: 50%;
@@ -56,8 +69,23 @@ header .avatar img {
     transition: .3s ease all;
 }
 
-header .avatar img:hover {
+.avatar img:hover {
     border: solid 2px var(--yellow);
+}
+
+.nav-hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 2px;
+    margin: 5px auto;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    background-color: var(--white);
 }
 
 .btn {
@@ -104,7 +132,7 @@ header .avatar img:hover {
 .banner {
     font-size: 14px;
     height: 400px;
-    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url('../img/banner-Attack-on-Titan.jpg');
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url('../img/banner-Attack-on-Titan.jpg') no-repeat center;
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -136,12 +164,56 @@ header .avatar img:hover {
     margin-left: 20px;
 }
 
-.box-cover{
+.box-cover {
     display: block;
 }
 
-.title-carousel{
+.title-carousel {
     margin-top: 15px;
     margin-bottom: 5px;
     font-size: 14px;
+}
+
+@media(max-width:768px) {
+    .avatar {
+        display: none;
+    }
+
+    .nav-hamburger {
+        display: block;
+    }
+
+    .nav-hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .nav-hamburger.active .bar:nth-child(1) {
+        transform: translateY(7px) rotate(45deg);
+    }
+
+    .nav-hamburger.active .bar:nth-child(3) {
+        transform: translateY(-7px) rotate(-45deg);
+    }
+
+    .nav-menu {
+        position: fixed;
+        top: -100%;
+        left: 0;
+        gap: 0;
+        flex-direction: column;
+        background-color: var(--gray-100);
+        width: 100%;
+        text-align: center;
+        transition: .3s ease;
+    }
+
+    .nav-item {
+        width: 100%;
+        padding: 15px;
+        border-top: 1px solid var(--white);
+    }
+
+    .nav-menu.active {
+        top: 70px;
+    }
 }
