@@ -132,7 +132,7 @@ body {
 .banner {
     font-size: 14px;
     height: 400px;
-    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url('../img/banner-Attack-on-Titan.jpg') no-repeat center;
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url('../img/banner-Attack-on-Titan.jpg');
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -144,17 +144,17 @@ body {
     width: 75%;
 }
 
-.banner .title {
+.banner-title {
     margin-top: 5%;
     font-size: 30px;
 }
 
-.banner .season {
+.banner-season {
     margin-top: 5px;
     font-size: 14px;
 }
 
-.banner .description {
+.banner-description {
     text-align: justify;
     margin-top: 10px;
 }
@@ -215,5 +215,27 @@ body {
 
     .nav-menu.active {
         top: 70px;
+    }
+}
+
+@media(max-width:576px) {
+
+    .banner .container {
+        width: 90%;
+    }
+
+    .banner-title {
+        margin-top: 5%;
+        font-size: 30px;
+    }
+
+    .banner-season {
+        margin-top: 5px;
+        font-size: 14px;
+    }
+
+    .banner-description {
+        text-align: justify;
+        margin-top: 10px;
     }
 }
