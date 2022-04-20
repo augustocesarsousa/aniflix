@@ -98,8 +98,7 @@ header .avatar img:hover {
 }
 
 .container {
-    margin-left: 20px;
-    margin-right: 20px;
+    margin: 0 20px;
 }
 
 .banner {
@@ -111,6 +110,10 @@ header .avatar img:hover {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+}
+
+.banner .container {
+    width: 75%;
 }
 
 .banner .title {
@@ -126,10 +129,19 @@ header .avatar img:hover {
 .banner .description {
     text-align: justify;
     margin-top: 10px;
-    width: 75%;
 }
 
 .banner .buttons {
     margin-top: 20px;
     margin-left: 20px;
+}
+
+.box-cover{
+    display: block;
+}
+
+.title-carousel{
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-size: 14px;
 }

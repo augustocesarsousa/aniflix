@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/main.css">
+
+    <!--font awesome css-->
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
@@ -13,6 +16,12 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
+    <!--owl css-->
+
+    <link rel="stylesheet" href="style/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="style/owl/owl.theme.default.min.css">
+
     <title>ANIFLIX</title>
 </head>
 <body>
@@ -30,23 +39,50 @@
         </div>
     </header>
     <main>
-        <div class="banner">
+        <session class="banner">
             <div class="container">
                 <h3 class="title">Attack on Titan</h3>
                 <h4 class="season">Temporada 4</h4>
                 <p class="description">Gabi Braun e Falco Grice treinaram suas vidas inteiras para herdar um dos sete titãs sob o controle de Marley e ajudar sua nação a erradicar os Eldianos da Ilha Paradis. No entanto, assim como tudo parece bem para os dois cadetes, sua paz é repentinamente abalada pela chegada de Eren Yeager e dos membros restantes da Divisão de Reconhecimento.</p>
                 <div class="buttons">
-                    <button role="button" class="btn btn-circle play" title="Assistir"><i class="fa-solid fa-play"></i></button>
+                    <button role="button" class="btn btn-circle play" title="Assistir agora"><i class="fa-solid fa-play"></i></button>
                     <button role="button" class="btn btn-square info" title="Clique para mais informações">informações</button>
                 </div>
             </div>
-        </div>
+        </session>
+        <session class="recommended">
+            <div class="container">
+                <h4 class="title-carousel">Recomendados</h4>
+                <div class="owl-carousel owl-theme">
+                    <div class="item"><img class="box-cover" src="img/cover01.jpg" alt=""></div>
+                    <div class="item"><img class="box-cover" src="img/cover02.jpg" alt=""></div>
+                    <div class="item"><img class="box-cover" src="img/cover03.jpg" alt=""></div>
+                    <div class="item"><img class="box-cover" src="img/cover04.jpg" alt=""></div>
+                    <div class="item"><img class="box-cover" src="img/cover05.jpg" alt=""></div>
+                    <div class="item"><img class="box-cover" src="img/cover06.jpg" alt=""></div>
+                    <div class="item"><img class="box-cover" src="img/cover07.jpg" alt=""></div>
+                    <div class="item"><img class="box-cover" src="img/cover08.jpg" alt=""></div>
+                    <div class="item"><img class="box-cover" src="img/cover09.jpg" alt=""></div>
+                    <div class="item"><img class="box-cover" src="img/cover10.jpg" alt=""></div>
+                </div>
+            </div>
+        </session>
     </main>
+
+    <!--font awesome js-->
+
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"
       integrity="sha512-6PM0qYu5KExuNcKt5bURAoT6KCThUmHRewN3zUFNaoI6Di7XJPTMoT6K0nsagZKk2OB4L7E3q1uQKHNHd4stIQ=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+
+    <!--owl js-->
+
+    <script src="js/owl/jquery.min.js"></script>
+    <script src="js/owl/owl.carousel.min.js"></script>
+    <script src="js/owl/main.js"></script>
+
 </body>
 </html>
