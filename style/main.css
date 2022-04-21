@@ -1,7 +1,8 @@
 :root {
-    --balck-50-transparent: rgba(0, 0, 0, .5);
+    --black-50-transparent: rgba(0, 0, 0, .5);
     --gray-25: #ccc;
     --gray-100: #333;
+    --gray-125: #222;
     --white: #fff;
     --yellow: #ff0;
 }
@@ -25,7 +26,7 @@ body {
 }
 
 header {
-    background-color: var(--balck-50-transparent);
+    background-color: var(--gray-125);
 }
 
 footer {
@@ -36,7 +37,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--balck-50-transparent);
+    background-color: var(--gray-125);
 }
 
 li {
@@ -148,14 +149,16 @@ li {
 }
 
 .btn-back,
-.btn-info {
+.btn-info,
+.btn-trailer {
     border: solid 2px var(--gray-25);
     color: var(--gray-25);
     background-color: var(--gray-100);
 }
 
 .btn-back:hover,
-.btn-info:hover {
+.btn-info:hover,
+.btn-trailer:hover {
     color: var(--yellow);
     border-color: var(--yellow);
 }
@@ -172,7 +175,7 @@ li {
 .banner {
     font-size: 14px;
     height: 400px;
-    background: linear-gradient(var(--balck-50-transparent), var(--balck-50-transparent)), url('../img/banner-Attack-on-Titan.jpg');
+    background: linear-gradient(var(--black-50-transparent), var(--black-50-transparent)), url('../img/banner-Attack-on-Titan.jpg');
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -239,7 +242,7 @@ li {
     height: 100%;
     width: 100%;
     cursor: pointer;
-    background: linear-gradient(var(--balck-50-transparent), var(--balck-50-transparent));
+    background: linear-gradient(var(--black-50-transparent), var(--black-50-transparent));
 }
 
 .watching .owl-carousel .owl-item:nth-child(1):after {
@@ -319,12 +322,12 @@ li {
     }
 
     .nav-menu {
-        position: fixed;
+        position: absolute;
         top: -100%;
         left: 0;
         gap: 0;
         flex-direction: column;
-        background-color: var(--gray-100);
+        background-color: var(--gray-125);
         width: 100%;
         text-align: center;
         transition: .3s ease;
@@ -333,11 +336,10 @@ li {
     .nav-item {
         width: 100%;
         padding: 15px;
-        border-top: 1px solid var(--white);
     }
 
     .nav-menu.active {
-        top: 70px;
+        top: 69px;
     }
 }
 
