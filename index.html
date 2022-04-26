@@ -26,15 +26,15 @@
 </head>
 <body>
     <header>
-        <div class="container">
+        <div class="container" id="home">
             <nav class="navbar">
                 <h2 class="nav-logo"><a href="#">ANIFLIX</a></h2>
                 <div class="nav-menu-content">
                     <ul class="nav-menu">
-                        <li class="nav-item"><a href="#" class="nav-link">Início</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">Animes</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">Filmes</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">Em Breve</a></li>
+                        <li class="nav-item"><a href="#home" class="nav-link">Início</a></li>
+                        <li class="nav-item"><a href="#my-list" class="nav-link">Minha lista</a></li>
+                        <li class="nav-item"><a href="#recommended" class="nav-link">Recomendados</a></li>
+                        <li class="nav-item"><a href="#more-watching" class="nav-link">Mais assistidos</a></li>
                     </ul>
                     <div class="nav-avatar">
                         <a href="#" class="avatar"><img src="img/avatar-saitama.jpg" alt="avatar do usuário" title="Configurações"></a>
@@ -49,7 +49,7 @@
         </div>
     </header>
     <main>
-        <section class="banner">
+        <section id="banner">
             <div class="container">
                 <h3 class="banner-title">Attack on Titan</h3>
                 <h4 class="banner-season">Temporada 4</h4>
@@ -60,7 +60,7 @@
                 </div>
             </div>
         </section>
-        <section class="watching">
+        <section id="watching">
             <div class="container">
                 <h4 class="title-carousel">Continuar assistindo</h4>
                 <div class="owl-carousel owl-theme">
@@ -70,7 +70,7 @@
                 </div>
             </div>
         </section>
-        <section class="my-list">
+        <section id="my-list">
             <div class="container">
                 <h4 class="title-carousel">Minha lista</h4>
                 <div class="owl-carousel owl-theme">
@@ -87,7 +87,7 @@
                 </div>
             </div>
         </section>
-        <section class="recommended">
+        <section id="recommended">
             <div class="container">
                 <h4 class="title-carousel">Recomendados</h4>
                 <div class="owl-carousel owl-theme">
@@ -104,7 +104,7 @@
                 </div>
             </div>
         </section>
-        <section class="more-watching">
+        <section id="more-watching">
             <div class="container">
                 <h4 class="title-carousel">Mais assistidos</h4>
                 <div class="owl-carousel owl-theme">
@@ -121,6 +121,9 @@
                 </div>
             </div>
         </section>
+        <div>
+            <a href="#home"><button role="button" class="btn btn-circle btn-back btn-home" title="Início"><i class="fa-solid fa-angle-up"></i></button></a>
+        </div>
     </main>
     <footer>
         <div class="container">
